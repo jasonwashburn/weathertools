@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
 LABEL Name=weathertools Version=0.0.1
 
 RUN apt update && DEBIAN_FRONTEND="noninteractive" apt install -y \
