@@ -1,7 +1,11 @@
 FROM ubuntu:latest
 LABEL Name=weathertools Version=0.0.1
 
-RUN apt update && DEBIAN_FRONTEND="noninteractive" apt install -y python3-cfgrib pip python3-cartopy
+RUN apt update && DEBIAN_FRONTEND="noninteractive" apt install -y \
+    python3-cfgrib \
+    pip \
+    python3-cartopy \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN pip install jupyterlab
 
