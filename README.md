@@ -2,6 +2,14 @@
 
 A convenient container for working with weather data in python and Jupyter Lab.
 
-Comes with Jupyter Lab, cfgrib, Cartopy, and Xarray preinstalled. Launches Jupyter hub on port 8888
+Based on the miniconda3 base container. Comes with the following tools preinstalled:
+ - Jupyter Lab
+ - cfgrib
+ - Cartopy 
+ - grib2io
+ - pygrib
+ - Xarray
+ 
+ Launches Jupyter hub on port 8888, default notebook directory is /opt/notebooks
 
 Usage: `docker run -it -p 8888:8888 jasonwashburn/weathertools:0.0.2`
