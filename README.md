@@ -2,6 +2,8 @@
 
 A convenient container for working with weather data in python and Jupyter Lab.
 
+View the Dockerfile on [Github](https://hub.docker.com/r/jasonwashburn/weathertools)
+
 Based on the miniconda3 base container. Comes with the following tools preinstalled:
  - Jupyter Lab
  - cfgrib
